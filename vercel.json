@@ -1,8 +1,7 @@
 {
-    "version":2,
     "builds": [
         {
-            "src":"./index.py",
+            "src":"TDS/app.py",
             "use": "@vercel/python",
             "config":{"runtime":"python3.8"}
         }
@@ -10,7 +9,7 @@
     "routes": [
         {
             "src":"/(.*)",
-            "dest":"/"
+            "dest":"TDS/app.py"
         }
     ]
 }
